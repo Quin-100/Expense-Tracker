@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".Bal_Report" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="30dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_balrp_mth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Month"
+            android:textSize="35dp"
+            android:textColor="#FF0000"/>
+
+        <Spinner
+            android:id="@+id/sp_mth_balrp"
+            android:layout_width="45dp"
+            android:layout_height="25dp"
+            style="@style/credit_btn"
+            android:entries="@array/month_array" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/linearLayout1"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/linearLayout1"
+        android:layout_marginLeft="39dp"
+        android:layout_toRightOf="@+id/linearLayout1"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_balrp_yr"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Year"
+            android:textSize="35dp"
+            android:textColor="#FF0000" />
+
+        <Spinner
+            android:id="@+id/sp_yr_balrp"
+            android:layout_width="60dp"
+            android:layout_height="25dp"
+            style="@style/credit_btn"
+            android:entries="@array/year_array"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_yr_bal"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_mth_bal"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="38dp"
+        android:text="Yearly Balance"
+        android:background="@color/colorAccent"
+        android:textColor="#fff"/>
+
+    <TextView
+        android:id="@+id/tv_balrp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="58dp"
+        android:text="Balance Report"
+        android:textSize="40dp"
+        android:textColor="#FF0000"/>
+
+    <Button
+        android:id="@+id/btn_mth_bal"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_balrp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="34dp"
+        android:text="Monthly Balance"
+        android:background="@color/colorAccent"
+        android:textColor="#fff" />
+
+</RelativeLayout>

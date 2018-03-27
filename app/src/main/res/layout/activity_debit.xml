@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".Debit" >
+
+    <TextView
+        android:id="@+id/tv_src"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="25dp"
+        android:text="Source"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#FF1C00" />
+
+    <EditText
+        android:id="@+id/ed_deb_src"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tv_src"
+        android:layout_marginLeft="63dp"
+        android:layout_toRightOf="@+id/tv_src"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/db_tv_amt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_src"
+        android:layout_below="@+id/ed_deb_src"
+        android:layout_marginTop="40dp"
+        android:text="Amount"
+        android:textColor="#FF1C00"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/ed_deb_amt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/db_tv_amt"
+        android:layout_toRightOf="@+id/textView3"
+        android:ems="10"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/btn_sub"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30dp"
+        android:text="Submit"
+        android:typeface="serif"
+        android:background="@color/colorAccent"
+        android:textColor="#fff" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" >
+
+        <TextView
+            android:id="@+id/tv_day"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:text="Day"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#FF1C00" />
+
+        <TextView
+            android:id="@+id/tv_month"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="40dp"
+            android:text="Month"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#FF1C00" />
+
+        <TextView
+            android:id="@+id/tv_yr"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30dp"
+            android:text="Year"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="#FF1C00" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_alignLeft="@+id/linearLayout3"
+        android:layout_below="@+id/linearLayout3"
+        android:layout_marginTop="19dp" >
+
+        <Spinner
+            android:id="@+id/sp_deb_day"
+            style="@style/credit_btn"
+            android:layout_width="45dp"
+            android:layout_height="25dp"
+            android:entries="@array/day_array" />
+
+        <Spinner
+            android:id="@+id/sp_month"
+            style="@style/credit_btn"
+            android:layout_width="45dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="60dp"
+            android:entries="@array/month_array" />
+
+        <Spinner
+            android:id="@+id/sp_year"
+            style="@style/credit_btn"
+            android:layout_width="70dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="50dp"
+            android:entries="@array/year_array" />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/ed_deb_amt"
+        android:layout_toRightOf="@+id/db_tv_amt"
+        android:layout_marginLeft="40dp"
+        android:text="₹"
+        android:textSize="30dp" />
+
+</RelativeLayout>
+

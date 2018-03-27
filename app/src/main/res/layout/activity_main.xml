@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_cat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="28dp"
+        android:text="Manage Your Expenses"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="#E32636"
+        android:textSize="35dp"
+        android:textAlignment="center"/>
+
+    <Button
+        android:id="@+id/btn_main_balance"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/btn_main_cr"
+        android:layout_alignBottom="@+id/btn_main_rep"
+        android:text="Balance"
+        android:background="#ffff33"
+        android:textColor="@color/colorAccent"/>
+
+    <Button
+        android:id="@+id/btn_main_rep"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btn_main_cr"
+        android:layout_below="@+id/btn_main_cr"
+        android:layout_marginTop="60dp"
+        android:text="Report"
+        android:background="#ffff33"
+        android:textColor="@color/colorAccent" />
+
+    <Button
+        android:id="@+id/btn_main_db"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btn_main_rep"
+        android:layout_below="@+id/btn_main_balance"
+        android:layout_marginTop="60dp"
+        android:text="Income"
+        android:background="#ffff33"
+        android:textColor="@color/colorAccent" />
+
+    <Button
+        android:id="@+id/btn_main_cr"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_cat"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="81dp"
+        android:text="Expenditure"
+        android:background="#ffff33"
+        android:textColor="@color/colorAccent" />
+
+</RelativeLayout>

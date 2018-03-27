@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".Show_bal" >
+
+    <TextView
+        android:id="@+id/tv_day"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/linearLayout1"
+        android:layout_below="@+id/linearLayout1"
+        android:layout_marginTop="62dp"
+        android:text="      Total Expenditure"
+        android:textSize="30dp" android:textColor="#FF3800"
+        />
+
+    <EditText
+        android:id="@+id/et_bal_ex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tv_day"
+        android:layout_toRightOf="@+id/cr_tv_mth"
+        android:ems="10"
+        android:layout_marginTop="15dp"
+        android:inputType="number"
+        android:editable="false" />
+
+    <TextView
+        android:id="@+id/tv_yr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_bal_ex"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="71dp"
+        android:text="Current Balance"
+        android:textSize="30dp"
+        android:textColor="#FF3800"/>
+
+    <TextView
+        android:id="@+id/cr_tv_mth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/et_bal_ex"
+        android:layout_marginLeft="24dp"
+        android:layout_toRightOf="@+id/tv_day"
+        android:text="₹"
+        android:textSize="35dp" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp" >
+
+        <TextView
+            android:id="@+id/tv_src"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="  Total Income"
+            android:textSize="30dp"
+            android:textColor="#FF3800"/>
+
+        <TextView
+            android:id="@+id/db_tv_amt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:text="₹"
+            android:textSize="35dp" />
+
+        <EditText
+            android:id="@+id/et_bal_inc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            android:editable="false"
+            android:ems="10"
+            android:inputType="number" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/et_bal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/tv_yr"
+        android:layout_below="@+id/tv_yr"
+        android:layout_marginTop="29dp"
+        android:ems="10"
+        android:inputType="number" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/et_bal"
+        android:layout_toLeftOf="@+id/et_bal"
+        android:text="₹"
+        android:textSize="30dp" />
+
+</RelativeLayout>
